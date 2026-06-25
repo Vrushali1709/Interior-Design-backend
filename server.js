@@ -10,7 +10,8 @@ const blogRoutes = require("./routes/blogRoutes");
 const contactRoutes = require("./routes/contactRoutes");
 
 dotenv.config();
-
+console.log("MONGO_URI exists:", !!process.env.MONGO_URI);
+console.log("PORT:", process.env.PORT);
 // Connect Database
 connectDB();
 
