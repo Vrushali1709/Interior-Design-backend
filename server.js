@@ -20,9 +20,9 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "http://localhost:3000",
       "http://localhost:5173",
-      "https://your-frontend-domain.vercel.app",
+      "http://localhost:3000",
+      "https://interior-design-website-zq6j.onrender.com",
     ],
     credentials: true,
   })
