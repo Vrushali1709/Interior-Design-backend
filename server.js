@@ -45,7 +45,7 @@ app.use("/api/blogs", blogRoutes);
 app.use("/api/contact", contactRoutes);
 
 // 404 Handler
-app.use("*", (req, res) => {
+app.use((req, res) => {
   res.status(404).json({
     success: false,
     message: "Route not found",
